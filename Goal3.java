@@ -7,6 +7,7 @@ import java.io.IOException;
 
 public class Goal3 {
     public static void main(String[] args) {
+
         List<String> lines1 = readFile("cashbox1.txt");
         List<String> lines2 = readFile("cashbox2.txt");
         List<String> lines3 = readFile("cashbox3.txt");
@@ -31,13 +32,13 @@ public class Goal3 {
         for (String line: lines4) { cashbox4.add(Float.parseFloat(line)); }
         for (String line: lines5) { cashbox5.add(Float.parseFloat(line)); }
 
+        int time = -1;
+        float sum = -1;
 
+        for (int i = 0; i < lines1.size(); i++) {
+            float total = (float) (cashbox1[i]+cashbox2[i]+cashbox3[i]+cashbox4[i]+cashbox5[i]);
 
-        System.out.println(cashbox1);
-        System.out.println(cashbox2);
-        System.out.println(cashbox3);
-        System.out.println(cashbox4);
-        System.out.println(cashbox5);
+        }
     }
 
 
